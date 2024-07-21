@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Список товаров &ndash; Сельмаг</title>
 </head>
 <body>
-$END$
+<h1>
+    <table>
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Товар</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr data-th-each="product : ${products}">
+            <td data-th-text="${product.id}"></td>
+            <td data-th-text="${product.title}"></td>
+
+        </tr>
+        </tbody>
+
+    </table>
+</h1>
 </body>
 </html>
